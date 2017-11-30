@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.welvarend;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,10 +10,11 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
-public class RNReactNativeCompassPackage implements ReactPackage {
+
+public class CompassPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNReactNativeCompassModule(reactContext));
+      return Arrays.<NativeModule>asList(new CompassModule(reactContext));
     }
 
     // Deprecated from RN 0.47
